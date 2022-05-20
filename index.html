@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <section class="home-container" id="home">
+        <nav class="navbar">
+            <header> 
+                <a href="#home"><i class="fa-brands fa-battle-net logo"></i> RAMANAN</a>
+            </header>
+            <ul>
+                <li class="nav-button"><a href="#aboutme">About Me</a></li>
+                <li class="nav-button"><a href="#skills">Skills</a></li>
+                <li class="nav-button"><a href="#projects">Projects</a></li>
+                <li class="nav-button"><a href="#contact">Contact</a></li>
+                
+            </ul>
+            <div class="nav-burger"><i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li class="nav-button"><a href="#aboutme">About Me</a></li>
+                    <li class="nav-button"><a href="#skills">Skills</a></li>
+                    <li class="nav-button"><a href="#projects">Projects</a></li>
+                    <li class="nav-button"><a href="#contact">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="contents-container">
+            <div class="contents">
+                <h3>Hi There...</h3>
+                <h3>How You Doing...</h3>
+                <h1>I am <span class="name">Ramanan</span></h1>
+                <h3>An Aspiring Web Developer</h3>
+                <button class="about-button"><a href="#aboutme">About Me ></a></button>
+                <div class="social">
+                    <a class="linkedin" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="github" href="https://www.github.com"><i class="fa-brands fa-github"></i></a>
+                    <a class="instagram" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutme-container" id="aboutme">
+        <h1>About Me</h1>
+        <div class="aboutme">
+            <div class="information">
+                <ul>
+                    <li>My goal is to obtain position as a Senior Software Engineer to learn and advance my current skill set and improve the services of the establishment.</li>
+                    <li>I am skilled In dealing with problems in a resourceful manner and negotiating to achieve beneficial agreement.</li>
+                    <li>I am always enthusiastic to learn and undertake new challenges.</li>
+                </ul>
+            </div>
+            <div class="about-image-container"><img class="about-image" src="/images/illus/About.png" alt="about-image"></div>
+        </div>
+    </section>
+    <section class="education-container">
+        <h1>Education & Work Experience</h1>
+        
+        <div class="education">
+
+            <div class="study-image-container"><img class="study-image" src="/images/illus/Study.png" alt="study-image"></div>
+            <div class="ed-container">
+                <div class="ed">
+                    <h3>Worked as Quality Assurance Analyst</h3>
+                    <p>03/2021 - 12/2021<br>ScanRev India Private Ltd, Bangaluru</p>
+                </div>
+                <div class="ed">
+                    <h3>Bachelor Of Technology - Mechanical Engineering</h3>
+                    <p>2016 - 2020 <br>Sri Manakula Vinayagar Engineering College, Pondicherry</p>
+                </div>
+                <div class="ed">
+                    <h3>12 th - Higher Secondary School</h3>
+                    <p>2015 - 2016 <br>Holy Flowers Higher Secondary School, Pondicherry</p>
+                </div>
+                <div class="ed">
+                    <h3>10 th - High School</h3>
+                    <p>2013 - 2014 <br>Arul Sasthalaya Higher Secondary School, Pondicherry</p>
+                </div>
+                <button class="resume">Resume</button>
+            </div>
+        </div>
+    </section>
+    <section class="skills-container" id="skills">
+        <h1>My Skills</h1>
+        <div class="skills">
+            <ul>
+                <li class="skillset"><p>JavaScript</p><div class="skillbar"><div class="bar" id="Js"></div></div> 70 %</li>
+                <li class="skillset"><p>HTML & CSS</p><div class="skillbar"><div class="bar" id="Hc"></div></div> 80 %</li>
+                <li class="skillset"><p>Python</p><div class="skillbar"><div class="bar" id="Py"></div></div> 50 %</li>
+                <li class="skillset"><p>React</p><div class="skillbar"><div class="bar" id="Re"></div></div> 20 %</li>
+                <li class="skillset"><p>Git & Github</p><div class="skillbar"><div class="bar" id="Gh"></div></div> 30 %</li>
+            </ul>
+            <div class="skill-image-container"><img src="/images/illus/Developer.png" alt="" class="skill-image"></div>
+        </div>
+    </section>
+    <section class="projects-container" id="projects">
+        <h1>My Projects</h1>
+        <div class="projects">
+            <div class="project-list"><p>Simple Food Recipe app using Html - css Javascript <br><i class="fa-brands fa-github"></i></p><img src="/images/captain america.jpeg" alt=""></div>
+            <div class="project-list"><p>Simple Drumkit app using Html - css and Javascript <br><i class="fa-brands fa-github"></i></p><img src="/images/ironman.jpg" alt=""></div>
+            <div class="project-list"><p>Simple Music player using Html css and Javascript <br><i class="fa-brands fa-github"></i></p><img src="/images/thor.jpg" alt=""></div>
+
+        </div>
+    </section>
+    <section class="certificate-container">
+        <h1>Certifications</h1>
+        <div class="certificates">
+            <div class="cert"><img src="/images/certs/Html - Css Certificate.png" alt="Html-css Cert"></div>
+            <div class="cert"><img src="/images/certs/JavaScript DSA Certificate.png" alt="JavaScript DSA Cert"></div>
+            <div class="cert"><img src="/images/certs/JavaScript Basic HackerRank Certificate.png" alt="JavaScript Basic Cert"></div>
+            <div class="cert"><img src="/images/certs/JavaScript Intermediate HackerRank Certificate.png" alt="JavaScript Intermediate Cert"></div>
+            <div class="cert"><img src="/images/certs/Python Certificate.png" alt="Python Cert"></div>
+        </div>
+    </section>
+    <section class="contact-container" id="contact">
+        <h1>Contact</h1>
+        <div class="contact">
+            <div class="message-container">
+                <h3>Leave me a Message</h3>
+                <input class="contact-input" type="text" name="name" id="name" placeholder="Your Name">
+                <input class="contact-input" type="email" name="email" id="email" placeholder="Your Email Address">
+                <input class="contact-input" type="text" name="message" id="message" placeholder="Your Message">
+                <button type="submit" disabled="true" class="submit-button">Submit</button>
+            </div>
+            <div class="address-container">
+                <h3>Address</h3>
+                <div class="ad-name"><i class="fa-solid fa-user"></i>&emsp;Ramanan</div>
+                <div class="ad-location"><i class="fa-solid fa-location-dot"></i>&emsp;Pondicherry, India</div>
+                <div class="ad-email"><i class="fa-solid fa-paper-plane"></i>&emsp;ramananr2698095@gmail.com</div>
+                <div class="ad-phoneno"><i class="fa-solid fa-phone"></i>&emsp;+91 9944331633</div>
+                <div class="social">
+                    <a class="linkedin" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="github" href="https://www.github.com"><i class="fa-brands fa-github"></i></a>
+                    <a class="instagram" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="foot"><p>&#169; 2022 Copyright @ Ramanan<span>Designed By : Ramanan</span></p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -39,6 +39,7 @@ a{
 
 .logo{
     color: var(--white);
+    font-size: 30px;
 }
 nav{
     position: fixed;
@@ -46,7 +47,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--background-color);
-    height: 50px;
+    height: 70px;
     margin-left: -10%;
     margin-top: -1px;
     width: 100%;
@@ -55,6 +56,7 @@ nav{
 }
 header{
     margin: 20px;
+    font-size: 30px;
 }
 .nav-button{
     display: inline-block;
@@ -233,23 +235,24 @@ div.projects{
     flex-direction: column;
     gap: 50px;
     font-size: larger;
+    width: 50%;
 }
 .skillset{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 30px;
-    width: 600px;
+    height: 50px;
+    width: 500px;
     text-align: left;
     
 }
 .skillset p{
-    width: 100px;
+    width: 120px;
 }
 div.skillbar{
     height: 21px;
-    width: 300px;
+    width: 250px;
     border: 2px solid var(--white);
     padding: 1px;
     
@@ -273,9 +276,7 @@ div.bar{
 #Gh{
     width: 30%;
 }
-.skill-image{
-    margin-top: -50px;
-}
+
 /*Certificate container styling*/
 
 .certificate-container h1{

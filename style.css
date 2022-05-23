@@ -607,3 +607,59 @@ footer>p>span{
         line-height: inherit;
     }
 }
+
+@media only screen and (max-width: 391px){
+    body{
+        padding: 0 10px;
+        font-size: 1.3rem;
+    }
+    nav{
+        margin-left: -11px;
+        margin-top: -1px;
+        width: 391px;
+    }
+    div.contents{
+        width: 371px;
+    }
+    div.about-image-container{
+        width: 370px;
+    }
+    img.about-image{
+        margin-left: -10px;
+        width: inherit;
+    }
+    div.skills ul{
+        width: inherit;
+    }
+    li.skillset{
+        height: 100px;
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skillset p{
+        width: 150px;
+    }
+    .project-list,div.cert{
+        width: 370px;
+        height: 250px;
+    }
+    div.cert:nth-child(2) img,div.cert:nth-child(1) img{
+        width: inherit;
+    }
+    div.contact{
+        padding: 0;
+    }
+    div.address-container div{
+        margin: 25px 0;
+    }
+    div.social{
+        font-size: 30px;
+        justify-content: space-between;
+    }
+    .ad-name,.ad-location,.ad-email,.ad-phoneno{
+        font-size: 18px;
+    }
+    
+}

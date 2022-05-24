@@ -28,11 +28,11 @@ a{
 }
 .aboutme-container,.projects-container,.skills-container,.education-container,
 .certificate-container,.contact-container{
-    padding: 50px 0 0;
+    padding: 70px 0 0;
 }
-/* section,footer{
-    border: 1px solid white;
-} */
+section,footer{
+    border-bottom: 2px solid var(--secondary-color);
+}
 .home-container{
     min-height: 100vh;
 }
@@ -47,12 +47,16 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--background-color);
+    border-bottom: 2px solid var(--secondary-color);
     height: 70px;
     margin-left: -10%;
     margin-top: -1px;
     width: 100%;
     align-items: center;
     z-index: 10;
+}
+.hamburger{
+    display: none;
 }
 header{
     margin: 20px;
@@ -375,7 +379,6 @@ input:-webkit-autofill{
     margin: 25px 30px;
 }
 footer{
-    border-top: 2px solid var(--white);
     min-height: 50px;
     padding: 0 10%;
     line-height: 50px;
@@ -474,7 +477,9 @@ footer>p>span{
     }
 }
 @media only screen and (max-width: 768px){
-   
+    .home-container{
+        position: relative;
+    }
     nav{
         margin: 0;
         width: 612px;
@@ -487,6 +492,51 @@ footer>p>span{
         width: 300px;
         font-size: 1.5rem;
     }
+    
+    .hamburger{
+        position: absolute;
+        display: block;
+        height: 30px;
+        width: 30px;
+        font-size: 25px;
+        right: -67px;
+    }
+    .ham-slide{
+        position: fixed;
+        border: 1px solid var(--secondary-color);
+        background-color: var(--background-color);
+        height: inherit;
+        width: 300px;
+        right: 0;
+        top: 68px;
+        z-index: 10;
+        display: none;
+    }
+    .slide-open{
+        display: block;
+        animation: slide-open 0.5s ease-in-out;
+    }
+    @keyframes slide-open{
+        from{
+            transform: translateX(100%);
+        }to{
+            transform: translateX(0%);
+        }
+    }
+    
+    .ham-slide ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: inherit;
+        height: auto;
+        line-height: 70px;
+    }
+    .ham-slide ul li{
+        width: 70%;
+        border-bottom: 2px solid var(--secondary-color);
+    }
+    
     nav ul{
         display: none;
     }
@@ -573,6 +623,9 @@ footer>p>span{
         width: 460px;
         justify-content: center;
     }
+    .hamburger{
+        right: 0;
+    }
     .skillset{
         width: 460px;
     }
@@ -614,9 +667,19 @@ footer>p>span{
         font-size: 1.3rem;
     }
     nav{
+        display: flex;
+        justify-content: center;
         margin-left: -11px;
         margin-top: -1px;
-        width: 391px;
+        width: 411px;
+    }
+    .hamburger{
+        display: block;
+        right: 30px;
+    }
+    .ham-slide{
+        width: 200px; 
+        height: 800px;  
     }
     div.contents{
         width: 371px;

@@ -1,13 +1,19 @@
-const hamBtn = document.querySelector(".hamburger");
+const hamBtn = document.querySelector("#open");
+const crossBtn = document.querySelector("#close");
 const hamSlide = document.querySelector(".ham-slide");
 
-hamBtn.addEventListener("click", () => {
-    hamSlide.classList.add("slide-open");
-});
+function openbar(){
+    hamSlide.style.visibility = "visible";
+    hamSlide.style.width = "200px"; 
+    crossBtn.style.display = "block"; 
+    hamBtn.style.display = "none";
+}
+
+function closebar(){
+    hamSlide.style.width = "0"; 
+    hamSlide.style.visibility = "hidden";
+    hamBtn.style.display = "block";
+    crossBtn.style.display = "none"; 
+}
 
 
-hamSlide.addEventListener("click", () => {
-    if(hamSlide.className == "ham-slide slide-open"){
-        hamSlide.classList.remove("slide-open");
-    }
-})

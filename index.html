@@ -129,10 +129,15 @@
         <div class="contact">
             <div class="message-container">
                 <h3>Leave me a Message</h3>
-                <input class="contact-input" type="text" name="name" id="name" placeholder="Your Name">
-                <input class="contact-input" type="email" name="email" id="email" placeholder="Your Email Address">
-                <input class="contact-input" type="text" name="message" id="message" placeholder="Your Message">
-                <button type="submit" disabled="true" class="submit-button">Submit</button>
+                <form action="https://formsubmit.co/ramanan2698095@gmail.com" method="POST">
+                    <div class="form-container">
+                        <input class="contact-input" type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input class="contact-input" type="email" name="email" id="email" placeholder="Your Email Address" required>
+                        <input class="contact-input" type="text" name="message" id="message" placeholder="Your Message" required>
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
             </div>
             <div class="address-container">
                 <h3>Address</h3>

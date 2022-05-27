@@ -2,6 +2,7 @@ const hamBtn = document.querySelector("#open");
 const crossBtn = document.querySelector("#close");
 const hamSlide = document.querySelector(".ham-slide");
 
+
 function openbar(){
     
     hamSlide.style.visibility = "visible";
@@ -16,5 +17,3 @@ function closebar(){
     hamBtn.style.display = "block";
     crossBtn.style.display = "none"; 
 }
-
-

@@ -3,6 +3,7 @@ const crossBtn = document.querySelector("#close");
 const hamSlide = document.querySelector(".ham-slide");
 
 function openbar(){
+    
     hamSlide.style.visibility = "visible";
     hamSlide.style.width = "200px"; 
     crossBtn.style.display = "block"; 

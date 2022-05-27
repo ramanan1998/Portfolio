@@ -512,6 +512,7 @@ footer>p>span{
         color: var(--secondary-color);
     }
     .ham-slide{
+        visibility: hidden;
         position: fixed;
         border: 2px solid var(--secondary-color);
         background-color: var(--background-color);

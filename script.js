@@ -2,6 +2,10 @@ const hamBtn = document.querySelector("#open");
 const crossBtn = document.querySelector("#close");
 const hamSlide = document.querySelector(".ham-slide");
 
+const inputName = document.getElementById("name");
+const inputEmail = document.getElementById("email");
+const inputMessage = document.getElementById("message");
+const submitButton = document.getElementById("submit-button");
 
 function openbar(){
     

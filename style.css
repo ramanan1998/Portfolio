@@ -210,7 +210,9 @@ div.projects{
     position: absolute;
     top: 50%;
 }
-
+.project-list i{
+    font-size: 1.7rem;
+}
 .project-list img{
     position: absolute;
     height: inherit;
@@ -275,7 +277,7 @@ div.bar{
     width: 50%;
 }
 #Re{
-    width: 20%;
+    width: 30%;
 }
 #Gh{
     width: 30%;
@@ -372,7 +374,7 @@ input:-webkit-autofill:active{
 input:-webkit-autofill{
     -webkit-text-fill-color: var(--white) !important;
 }
-.submit-button{
+#submit-button{
     margin-left: 40%;
 }
 .address-container{

@@ -38,7 +38,7 @@ section,footer{
 }
 
 .logo{
-    color: var(--white);
+    color: var(--secondary-color);
     font-size: 30px;
 }
 nav{
@@ -61,11 +61,16 @@ nav{
 header{
     margin: 20px;
     font-size: 30px;
+    color: var(--secondary-color);
 }
+
 .nav-button{
     display: inline-block;
     text-align: center;
     width: 120px;
+}
+.nav-button:hover{
+    color: var(--secondary-color);
 }
 div.nav-burger{
     display: none;
@@ -158,10 +163,12 @@ div.aboutme{
     width: inherit;
     margin: 20px;
 }
-.about-image{
-    margin: -20px 30px 0 0;
-
+.about-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 /*Education container styling*/
 
 .education-container h1{
@@ -209,9 +216,6 @@ div.projects{
 .project-list p{
     position: absolute;
     top: 50%;
-}
-.project-list i{
-    font-size: 1.7rem;
 }
 .project-list img{
     position: absolute;

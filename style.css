@@ -4,6 +4,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 :root{
     --background-color: #191d2b;
@@ -29,7 +30,9 @@ a{
 .aboutme-container,.projects-container,.skills-container,.education-container,
 .certificate-container,.contact-container{
     padding: 70px 0 0;
+    
 }
+
 section,footer{
     border-bottom: 2px solid var(--secondary-color);
 }

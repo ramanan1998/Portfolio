@@ -39,11 +39,6 @@ section,footer{
 .home-container{
     min-height: 100vh;
 }
-
-.logo{
-    color: var(--secondary-color);
-    font-size: 30px;
-}
 nav{
     position: fixed;
     display: flex;
@@ -88,7 +83,7 @@ div.contents-container{
 div.contents{
     min-height: 450px;
     width: 70%;
-    line-height: 40px;
+    line-height: 60px;
     padding: 20px;
 }
 span.name{
@@ -398,14 +393,6 @@ footer{
 }
 footer>p>span{
     float: right;
-}
-
-@media only screen and (max-width: 1920px){
-    
-    div.contents{
-        line-height: 60px;
-    }
-    
 }
 
 @media only screen and (max-width: 1200px){

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --background-color: #191d2b;
+    --secondary-color: #00d1c0;
+    --font-size: 1rem;
+}
+body{
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+}
+div.resume-container{
+    text-align: center;
+}
+img{
+    height: 150%;
+    width: 70%;
+}
+
+@media only screen and (max-width: 576px){
+    img{
+        height: 500px;
+        width: 90%;
+    }
+}
